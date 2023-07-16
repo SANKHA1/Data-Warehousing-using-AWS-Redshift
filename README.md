@@ -13,6 +13,7 @@ This repo provides the ETL pipeline, to populate the sparkifydb database in AWS 
 ## Database Design
 ---
 * For the schema design, the STAR schema is used as it simplifies queries and provides fast aggregations of data.
+  
 ![image](https://github.com/SANKHA1/Data-Warehousing-using-AWS-Redshift/assets/45727862/106f1553-4c3c-4dfa-a3b2-0e8126980687)
 
 
@@ -26,7 +27,9 @@ This repo provides the ETL pipeline, to populate the sparkifydb database in AWS 
 * First, we load song and log data from JSON format in S3 into our staging tables (staging_songs_table and staging_events_table)
 
 * Next, we perform ETL using SQL, from the staging tables to our fact and dimension tables. Below shows the architectural design of this pipeline:
-![architecture](screenshots/architecture.PNG)
+
+![image](https://github.com/SANKHA1/Data-Warehousing-using-AWS-Redshift/assets/45727862/e4cc7d48-97a0-414d-a57f-96afd2bf446c)
+
 
 ## Files
 ---
